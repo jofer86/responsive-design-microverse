@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-header {
+	display: flex;
+	background: lightblue;
+	height: 30px;
+}
+
+nav {
+	width: 80%;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-items {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
