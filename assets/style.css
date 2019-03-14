@@ -5,18 +5,34 @@
 .main-header {
 	display: flex;
 	background: lightblue;
-	height: 30px;
+	height: 100%;
 }
 
 nav {
-	width: 80%;
+	width: 75%;
 	display: flex;
+	justify-content: flex-start;
 	align-items: center;
 
 }
 
 .nav-items {
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	list-style: none;
+}
+
+.nav-items li {
+	display: flex;
+	justify-content: stretch;
+}
+
+.nav-items li>a {
+	padding: 1% 1%;
+	text-decoration: none;
+	color: #4F4F4F;
+	font-size: 14px;
+	
+	
 }
