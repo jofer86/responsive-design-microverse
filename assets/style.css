@@ -116,10 +116,11 @@ nav {
 	color: #808080;
 }
 
+.seperator{
+	height:89px;
+}
+
 .container-one{
-	position:relative;
-	top:89px;
-	
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
@@ -154,24 +155,20 @@ nav {
 		background-size: 100% 100%;
 	}
 
-	.seperator{
-		position:relative;
-		top:89px;
-		height:40px;
-	}
+.latest-news{
+	color:red;
+	font-size: 28px;
+	font-weight: bold;
+	padding:10px 0 10px 0;
+}
 
 .container-two{
-	position:relative;
-	top:89px;
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	width:100%;
 }
 
-.two-1{
-	grid-column: 1/2
-}
 
-.two-2{
-	grid-column: 2/3
-}
+
+
 
