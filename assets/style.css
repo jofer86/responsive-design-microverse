@@ -102,20 +102,42 @@ nav {
 }
 
 .container-one{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
 	position:relative;
 	top:60px;
-    background: lightblue
-}
-
-.box-one{
 	display:grid;
-	grid-row: 1/2;
-	width:100%;
-	background: #4F4F4F;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50vh 50vh; 
+	
+	background: lightblue
+	
 }
 
-.box-one img{
+.box-1{
+	
+	grid-row: 1/span 2;
+	grid-column: 1/span 2;
+
+	background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-796x419.jpg);
+}
+
+/* .box-one img{
 	width:100%;
+	}  */
+
+
+	.box-2 {
+		grid-row: 1/2;
+	grid-column: 3/span 1;
+	
+	background: #4F4F4F;
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/we-reviewed-35k-projecter-header-image-796x417.png");
+	background-size: 100% 100%;
+	}
+
+	.box-3 {
+		grid-row: 2/3;
+		grid-column: 3/span 1;
+	
+		background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Untitled-design-2-1-796x417.png");
+		background-size: 100% 100%;
 	}
