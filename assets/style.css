@@ -9,6 +9,7 @@ header{
 	width:100%;
 	background:white;
 	z-index: 10;
+	
 }
 
 .main-header {
@@ -16,6 +17,18 @@ header{
 	height: 50px;
 	width:100%
 }
+
+.yellow{
+	padding: .6em;
+	width: 100%;
+	background: yellow;
+}
+
+/* .seperator {
+	width: 100%;
+	float: left;
+	height: 1px;
+} */
 
 nav {
 	width: 60%;
@@ -105,11 +118,14 @@ nav {
 
 .container-one{
 	position:relative;
-	top:60px;
+	top:89px;
+	
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
-	background: lightblue
+	background: lightblue;
+	float: left;
+	width: 100%;
 	
 }
 
@@ -138,9 +154,14 @@ nav {
 		background-size: 100% 100%;
 	}
 
+	.seperator{
+		clear: both;
+	}
+
 .container-two{
+	
 	display:grid;
-	grid-auto-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .two-1{
@@ -150,3 +171,4 @@ nav {
 .two-2{
 	grid-column: 2/3
 }
+
