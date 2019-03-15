@@ -124,7 +124,7 @@ nav {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
 	background: lightblue;
-	float: left;
+	/* float: left; */
 	width: 100%;
 	
 }
@@ -155,11 +155,14 @@ nav {
 	}
 
 	.seperator{
-		clear: both;
+		position:relative;
+		top:89px;
+		height:40px;
 	}
 
 .container-two{
-	
+	position:relative;
+	top:89px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
