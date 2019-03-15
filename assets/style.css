@@ -24,11 +24,7 @@ header{
 	background: yellow;
 }
 
-/* .seperator {
-	width: 100%;
-	float: left;
-	height: 1px;
-} */
+
 
 nav {
 	width: 60%;
@@ -190,4 +186,29 @@ nav {
 	background: green;
 	border: 1px solid;
 	display: flex;
+	flex-direction: column;
+	
+}
+
+.whole{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.top-image {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height:275px;	
+	width:368px;
+	color:white;
+	background:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-796x419.jpg");
+	background-size: 100% 100%;
+}
+
+.top-image a{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
 }
