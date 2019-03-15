@@ -193,7 +193,9 @@ nav {
 .whole{
 	display:flex;
 	flex-direction: column;
-	align-items: center;
+	width: 90%;
+	margin: 5%;
+	justify-content: stretch;
 }
 
 .top-image {
@@ -201,7 +203,7 @@ nav {
 	flex-direction: column;
 	justify-content: flex-end;
 	height:275px;	
-	width:368px;
+	width:100%;
 	color:white;
 	background:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-796x419.jpg");
 	background-size: 100% 100%;
@@ -212,3 +214,25 @@ nav {
 	text-decoration: none;
 	font-size: 20px;
 }
+
+.latest {
+	border: 1px;
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	padding: .9% 0;
+}
+
+.latest-left {
+	width: 65%;
+}
+
+.latest-right {
+	width: 25%;
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/Japan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg");
+	background-size: contain;
+	height: 100%;
+
+
+}
+
