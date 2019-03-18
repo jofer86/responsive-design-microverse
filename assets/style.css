@@ -387,8 +387,9 @@ nav {
 		width:20%;
 	}
 
-	.right-nav :nth-child(4){
+	.right-nav :nth-child(5){
 		display: inline-block;
+		color:red;		
 	}
 
 	.container-two{
@@ -407,6 +408,34 @@ nav {
 }
 
 @media screen and (max-width:770px) {
+	nav {
+		width:70%;
+	}
+	
+	.nav-items{
+		display: none;
+	}
+
+	.right-nav{
+		display: flex;
+		width:30%;
+	}
+
+	.right-nav :nth-child(1){
+		display:inline-block;
+		margin-left:10px;
+		margin-right:10px;
+		
+				
+	}
+
+	.right-nav :nth-child(2){
+		display:inline-block;
+		color: red;
+		border-left:1px solid black;
+				
+	}
+	
 	.container-one {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
@@ -437,4 +466,8 @@ nav {
 		padding-left: 2%;
 	}
 
+	.container-three {
+		grid-template-columns: 1fr;
+		padding: 2%;
+	}
 }
