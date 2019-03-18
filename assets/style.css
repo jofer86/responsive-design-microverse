@@ -27,7 +27,7 @@ header{
 
 
 nav {
-	width: 65%;
+	width: 800px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -63,7 +63,7 @@ nav {
 	color: #aaa;
 	font-size: 12px;
 	border: 1px solid transparent;
-	padding: 0 .6em;
+	/* padding: 0 .6em; */
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -79,7 +79,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	border-left:1px solid black;
-	width: 35%;
+	width:500px;
 }
 
 .right-nav button {
@@ -268,7 +268,7 @@ nav {
 
 .latest-left :nth-child(2){
 	font-weight: bold;
-
+	padding: 0 .6em;
 }
 
 .latest-right {
@@ -355,14 +355,14 @@ nav {
 
 
 
-@media screen and (max-width:1215px){
+@media screen and (max-width:1220px){
 	.nav-items :nth-child(n+6){
 		display: none;
 	}
 }
 
 
-@media screen and (max-width:1190px){
+@media screen and (max-width:1000px){
 	nav {
 		width: 95%;
 	}
@@ -378,7 +378,7 @@ nav {
 
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:850px){
 	nav {
 		width: 80%;
 	}
@@ -389,4 +389,18 @@ nav {
 	.right-nav :nth-child(4){
 		display: inline-block;
 	}
+
+	.container-two{
+		padding: .5% 2% 2% 2%;
+		display:grid;
+		grid-gap: 30px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.container-three {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 2%;
+	}
+
 }
