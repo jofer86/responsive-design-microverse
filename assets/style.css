@@ -129,6 +129,7 @@ nav {
 	grid-gap: 10px;
 	/* float: left; */
 	width: 100%;
+	padding: 1%;
 	
 }
 
@@ -401,6 +402,39 @@ nav {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding: 2%;
+	}
+
+}
+
+@media screen and (max-width:770px) {
+	.container-one {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	[class*="box-"] {
+		grid-column: 1/2;
+		grid-row: span 1;
+		height: 150px;
+	}
+
+	.container-two{
+		grid-template-columns: 1fr ;
+	}
+
+	[class*="two-"] {
+		display: flex;
+		/* justify-content: space-between; */
+	}
+
+	[class*="two-"] img {
+		width:75px;
+		height: 75px;
+	}
+
+	[class*="two-"] p {
+		padding-bottom: 2%;
+		padding-left: 2%;
 	}
 
 }
