@@ -144,8 +144,8 @@ nav {
 	}
 
 	.box-3 {
-		grid-row: 2;
-		grid-column: 3;
+		grid-row: 2/3;
+		grid-column: 3/4;
 		background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Untitled-design-2-1-796x417.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -284,4 +284,35 @@ nav {
 	padding-bottom: 10px;
 	border-bottom: 1px solid lightgray;
 	margin-bottom: 8px;
+}
+
+.social {
+	width: 50%;
+	height: 35%;
+	display: flex;
+}
+
+.dark {
+	background: #1A1A1A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-around;
+	align-self: flex-start;
+}
+
+
+.copyright{
+	background: #000000;
+}
+
+.anch {
+	display: flex;
+
+	align-self: flex-end;
 }
