@@ -285,25 +285,45 @@ nav {
 	border-bottom: 1px solid lightgray;
 	margin-bottom: 8px;
 }
-
-.social {
-	width: 50%;
-	height: 35%;
-	display: flex;
-}
-
 .dark {
 	background: #1A1A1A;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 200px;
 }
+.social {
+	display:flex;
+	flex-direction: column;
+	width: 50%;
+	height: 35%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
 
 .icons {
 	display: flex;
+	justify-content:space-around;
+	align-items:center;
+	width:50%;
+	color:white;
+}
+
+.icons li{
+	padding:10px;
+	border-radius:50%;
+	background:rgb(54, 54, 54);
+}
+
+.anch {
+	display: flex;
 	justify-content: space-around;
-	align-self: flex-start;
+	align-items: center;
+	width:50%;
+	color:rgb(136, 135, 135);
+
 }
 
 
@@ -311,8 +331,3 @@ nav {
 	background: #000000;
 }
 
-.anch {
-	display: flex;
-
-	align-self: flex-end;
-}
