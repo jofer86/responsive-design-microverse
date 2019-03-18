@@ -120,7 +120,6 @@ nav {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
-	background: lightblue;
 	/* float: left; */
 	width: 100%;
 	
@@ -296,7 +295,7 @@ nav {
 	display:flex;
 	flex-direction: column;
 	width: 50%;
-	height: 35%;
+	height: 55%;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -328,6 +327,45 @@ nav {
 
 
 .copyright{
+	height: 100px;
 	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
+.copyright img{
+	width: 40px;
+	height: 90px;
+	margin: 0 .5%;
+}
+
+.copyright p {
+	font-size: 2.5vh;
+	color: white;
+}
+
+
+
+@media screen and (max-width:1215px){
+	.nav-items :nth-child(n+6){
+		display: none;
+	}
+}
+
+
+@media screen and (max-width:1190px){
+	nav {
+		width: 90%;
+	}
+
+	.right-nav {
+		width: 10%;
+	}
+
+	.right-nav :nth-child(n+2){
+		display: none;
+	}
+
+}
