@@ -34,6 +34,13 @@ nav {
 
 }
 
+.left-image {
+	width:10%;
+	height:100%;
+	background:linear-gradient(to bottom right,#c09,#f42 85%);
+	padding:12px;
+}
+
 .nav-items {
 	display: flex;
 	justify-content: flex-start;
@@ -357,15 +364,27 @@ nav {
 
 @media screen and (max-width:1190px){
 	nav {
-		width: 90%;
+		width: 95%;
 	}
 
 	.right-nav {
-		width: 10%;
+		width: 5%;
 	}
 
 	.right-nav :nth-child(n+2){
 		display: none;
 	}
+}
 
+@media screen and (max-width:900px){
+	nav {
+		width: 80%;
+	}
+	.right-nav{
+		width:20%;
+	}
+
+	.right-nav :nth-child(4){
+		display: inline-block;
+	}
 }
