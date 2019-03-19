@@ -173,6 +173,11 @@ nav span {
 		background-size: 100% 100%;
 	}
 
+	.wrapper{
+		margin:0 auto;
+		max-width:1200px;
+	}
+
 .latest-news{
 	color:red;
 	font-size: 28px;
@@ -382,19 +387,7 @@ b{
         width: 30%;
 	}
 	
-	.latest-news{
-		margin-left:15%;
-		margin-right:15%;
-	}
-	.container-two{
-		margin-left:15%;
-		margin-right:15%;
-	}
 
-	.container-three{
-		margin-left:15%;
-		margin-right:15%;
-	}
 }
 
 @media screen and (max-width:1220px){
