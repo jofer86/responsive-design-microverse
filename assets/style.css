@@ -465,7 +465,7 @@ b{
 
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:768px) {
 	.nav-items{
 		display: none;
 	}
@@ -490,13 +490,10 @@ b{
 		padding: 18px 10px;		
 	}
 	
-	.container-one {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-	}
+
 
 	[class*="box-"] {
-		grid-column: 1/2;
+		grid-column: span 3;
 		grid-row: span 1;
 		height: 150px;
 	}
