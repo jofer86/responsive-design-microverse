@@ -374,7 +374,28 @@ nav span {
 b{
 	color:red;
 }
+@media screen and (min-width:1400px) {
+    nav {
+        width: 70%;
+    }
+    .right-nav {
+        width: 30%;
+	}
+	
+	.latest-news{
+		margin-left:15%;
+		margin-right:15%;
+	}
+	.container-two{
+		margin-left:15%;
+		margin-right:15%;
+	}
 
+	.container-three{
+		margin-left:15%;
+		margin-right:15%;
+	}
+}
 
 @media screen and (max-width:1220px){
 	.nav-items :nth-child(n+6){
