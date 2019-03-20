@@ -1,0 +1,618 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+header{
+	position:fixed;
+	width:100%;
+	background:white;
+	z-index: 10;
+	
+}
+
+.main-header {
+	display: flex;
+	height: 50px;
+	width:100%
+}
+
+.yellow{
+	padding: .6em;
+	width: 100%;
+	background: yellow;
+}
+
+
+
+nav {
+	width: 850px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+nav span {
+	display: none;
+	font-size: 22px;
+	font-weight: bold;
+	color:red;
+}
+
+.left-image {
+	width:110px;
+	height:100%;
+	background:linear-gradient(to bottom right,#c09,#f42 85%);
+	padding:12px;
+
+}
+
+.nav-items {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	list-style: none;
+	height: 100%;
+}
+
+.nav-items li{
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	margin: 0 .5em;
+}
+
+
+
+.nav-items li>a {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 12px;
+	border: 1px solid transparent;
+	/* padding: 0 .6em; */
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-items li>a:hover{
+	color:#4F4F4F;
+}
+
+.right-nav{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	border-left:1px solid black;
+	width:500px;
+}
+
+.right-nav button {
+	padding:8px;
+	border-radius: 8px;
+	color:white;
+	background: #00D2CE;
+	border:none;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.right-nav :nth-child(2){
+	display:none;
+	color: red;
+	border-left:1px solid black;
+			
+}
+
+.right-nav button:hover{
+	background:#A800C7;
+	cursor: pointer;
+}
+
+.right-nav img {
+	height: 1em;
+	width: 9em;
+}
+
+.right-nav :nth-child(4){
+	font-size: 12px;
+	
+	color:#555555
+	;
+}
+
+.right-nav :nth-child(5){
+	font-size: 22px;
+	font-weight: bold;
+	color:red;
+}
+
+.right-nav i {
+	color: #808080;
+}
+
+.seperator{
+	height:89px;
+}
+
+.container-one{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	/* float: left; */
+	width: 100%;
+	padding: 1%;
+	
+}
+
+.box-1{
+	height:450px;
+	grid-row: 1/3;
+	grid-column: 1/3;
+	background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-796x419.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+	.box-2 {
+	grid-row: 1/2;
+	grid-column: 3/4;	
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/we-reviewed-35k-projecter-header-image-796x417.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+
+	.box-3 {
+		grid-row: 2/3;
+		grid-column: 3/4;
+		background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Untitled-design-2-1-796x417.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.wrapper{
+		margin:0 auto;
+		max-width:1200px;
+	}
+
+.latest-news{
+	color:red;
+	font-size: 28px;
+	font-weight: bold;
+	padding:10px 0 10px 2%;
+}
+
+.container-two{
+	padding: .5% 2% 2% 2%;
+	display:grid;
+	grid-gap: 30px;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.container-two img {
+	width: 100%;
+	/* height: 60%; */
+}
+
+.two-1,
+.two-2,
+.two-3,
+.two-4{
+grid-row:1/2
+}
+
+.two-5,
+.two-6,
+.two-7,
+.two-8{
+grid-row:2/3
+}
+
+
+[class*="two-"] p {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.container-three {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+	padding: 2%;
+}
+
+.part-1,
+.part-2,
+.part-3{
+	grid-row:1/2
+}
+
+[class*="part-"] {
+
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-column: span 2;
+	
+}
+.head-title{
+	width:90%;
+	font-size: 28px;
+	font-weight: bold;
+	color:#ff4422;
+
+}
+.whole{
+	display:flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 5%;
+	margin-top:3%;
+}
+
+.top-image {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height:275px;	
+	width:100%;
+	color:white;
+	background:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-796x419.jpg");
+	background-size: 100% 100%;
+	margin-bottom:4px;
+}
+
+.top-image :nth-child(1){
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.top-image a{
+	color:white;
+	text-decoration: none;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.top-image :nth-child(3){
+	font-size: 9px;
+	color:lightgray;
+	margin-bottom: 8px;
+
+}
+
+.latest {
+	border: 1px;
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	padding: .9% 0;
+	background:#fff4f3;
+	margin-bottom:4px;
+}
+
+.latest-left {
+	width: 65%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.latest-left p {
+	color:#ff4422;
+}
+.latest-left :nth-child(1){
+	font-size: 13px;
+}
+
+.latest-left :nth-child(2){
+	font-weight: bold;
+	padding: 0 .6em;
+}
+
+.latest-right {
+	width: 35%;
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/Japan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg");
+	background-size: cover;
+	height: 100%;
+}
+
+.list{
+	padding:12px;
+}
+
+.list ul{
+	list-style: square;
+}
+
+.list li {
+	padding-bottom: 10px;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 8px;
+}
+.dark {
+	background: #1A1A1A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+.social {
+	display:flex;
+	flex-direction: column;
+	width: 50%;
+	height: 55%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.icons {
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+	width:50%;
+	color:white;
+}
+
+.icons li{
+	padding:10px;
+	border-radius:50%;
+	background:rgb(54, 54, 54);
+}
+
+.anch {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width:50%;
+	color:rgb(136, 135, 135);
+
+}
+
+
+.copyright{
+	height: 100px;
+	background: #000000;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	text-align: center;
+}
+
+.copyright img{
+	width: 40px;
+	/* height: 90px; */
+	margin: 0 .5%;
+}
+
+.copyright span {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+b{
+	color:red;
+}
+@media screen and (min-width:1400px) {
+    nav {
+        width: 70%;
+    }
+    .right-nav {
+        width: 30%;
+	}
+	
+
+}
+
+@media screen and (min-width:1024px) {
+	.left-image {
+		display: none;
+	}
+} 
+
+@media screen and (max-width:1220px){
+	.nav-items :nth-child(n+6){
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width:1000px){
+	nav {
+		width: 95%;
+	}
+
+	.right-nav {
+		width: 5%;
+	}
+
+	.right-nav :nth-child(n+2){
+		display: none;
+	}
+
+	/* .container-two{
+		padding: .5% 2% 2% 2%;
+		display:grid;
+		grid-gap: 30px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	*/
+
+.two-1,
+.two-2,
+.two-3{
+grid-row:1/2
+}
+
+.two-4,
+.two-5,
+.two-6{
+grid-row:2/3
+}
+
+.two-7,
+.two-8{
+grid-row:3/4
+}
+	
+
+	/* .container-three {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 2%;
+	}  */
+
+.part-1,
+.part-2{
+	grid-row:1/2;
+}
+
+.part-3{
+	grid-row:2/3;
+}
+
+}
+
+@media screen and (max-width:850px){
+	nav {
+		width: 80%;
+	}
+	.right-nav{
+		width:20%;
+	}
+
+	.right-nav :nth-child(5){
+		display: inline-block;
+		color:red;		
+	}
+
+	
+
+	
+
+}
+
+@media screen and (max-width:768px) {
+	.nav-items{
+		display: none;
+	}
+
+	.right-nav{
+		display: flex;
+		width:250px;
+	}
+
+	.right-nav :nth-child(1){
+		display:inline-block;
+		margin-left:10px;
+		margin-right:10px;
+		
+				
+	}
+
+	.right-nav :nth-child(2){
+		display:inline-block;
+		color: red;
+		border-left:1px solid gray;
+		padding: 18px 10px;		
+	}
+	
+
+
+	[class*="box-"] {
+		grid-column: span 3;
+		grid-row: span 1;
+		height: 150px;
+	}
+	
+	[class*="two-"]{
+		display:flex;
+	}
+	.two-1 {
+	grid-row:1/2
+	}
+	.two-2 {
+		grid-row:2/3
+	}
+	.two-3 {
+		grid-row:3/4
+	}
+	.two-4 {
+		grid-row:4/5
+	}
+	.two-5 {
+		grid-row:5/6
+	}
+	.two-6 {
+		grid-row:6/7
+	}
+	.two-7 {
+		grid-row:7/8
+	}
+	.two-8 {
+		grid-row:8/9
+	}
+
+	[class*="two-"] img {
+		width:75px;
+		height: 75px;
+	}
+
+	[class*="two-"] p {
+		padding-bottom: 2%;
+		padding-left: 2%;
+	}
+
+
+	.part-1{
+		grid-row:1/2
+	}
+
+	.part-2{
+		grid-row:2/3
+	}
+
+	.part-3{
+		grid-row:3/4
+	}
+
+
+	[class*="part-"]{
+		grid-column: span 6;
+	}
+	.copyright {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width:431px) {
+	.nav-items {
+		display: none;
+	}
+
+	nav span {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.right-nav {
+		width: 70px;
+	}
+
+	.right-nav :nth-child(5) {
+		display: none;
+	}
+
+}
+
+
+
+
+	
+
